@@ -205,7 +205,7 @@
 
     return (event[touchProp] && event[touchProp][0]
       ? (event[touchProp][0][pageProp] - (event[touchProp][0][pageProp] - event[touchProp][0][clientProp]))
-        || event[clientProp]
+        || event[touchProp][0][clientProp]
       : event[clientProp]);
   }
 
